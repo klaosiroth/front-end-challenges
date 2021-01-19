@@ -1,0 +1,74 @@
+@include breakpoint-up($laptop) {
+  .testimonial {
+    background: url(../images/bg-pattern-top-desktop.svg) no-repeat top left,
+      url(../images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+
+    height: calc(100vh - 17px);
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: 
+        "heading rated"
+        "card card";
+    }
+
+    &__heading {
+      grid-area: heading;
+
+      text-align: left;
+      max-width: 450px;
+
+      h2 {
+        font-size: 3rem;
+      }
+    }
+
+    &__rated {
+      grid-area: rated;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    &__rated-item {
+      width: 100%;
+      max-width: 445px;
+      display: flex;
+
+      &:nth-of-type(1) {
+        margin-right: 100px;
+      }
+      &:nth-of-type(2) {
+        margin-right: 50px;
+      }
+    }
+    &__stars {
+      margin: 0 2rem 0 1rem;
+    }
+
+    &__card {
+      grid-area: card;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+    }
+    &__card-item {
+      height: fit-content;
+
+      &:nth-of-type(2) {
+        margin-top: 16px;
+      }
+      &:nth-of-type(3) {
+        margin-top: 32px;
+      }
+    }
+  }
+}

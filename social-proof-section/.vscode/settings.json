@@ -1,0 +1,28 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css" // Default is null
+    }
+    // #Can add more
+    // {
+    //   "format": "compressed",
+    //   "extensionName": ".min.css",
+    //   "savePath": "/dist/css"
+    // }
+  ],
+  // To Exclude specific folders. All Sass/Scss files inside the folders will be ignored.
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**"
+  ],
+  // Set it as false if you don't want .map file for compiled CSS.
+  "liveSassCompile.settings.generateMap": false, // Default is true
+  // Automatically add vendor prefixes to unsupported CSS properties (e. g. transform -> -ms-transform).
+  "liveSassCompile.settings.autoprefix": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
+// #doc https://ritwickdey.github.io/vscode-live-sass-compiler/docs/faqs.html

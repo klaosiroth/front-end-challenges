@@ -1,0 +1,48 @@
+// # Colors
+// ## Primary
+$very-dark-magenta: hsl(300, 43%, 22%);
+$soft-pink: hsl(333, 80%, 67%);
+
+// ## Neutral
+$dark-grayish-magenta: hsl(303, 10%, 53%);
+$light-grayish-magenta: hsl(300, 24%, 96%);
+$white: hsl(0, 0%, 100%);
+
+// # Font
+$font-sans-serif: sans-serif;
+$font-base: 0.9375rem; // 15px
+$font-weights: (
+  "regular": 400,
+  "medium": 500,
+  "bold": 700
+);
+
+// # Layout
+// - Mobile: 375px
+// - Desktop: 1440px
+// Mobile: 360 x 640
+// Mobile: 375 x 667
+// Mobile: 360 x 720
+// iPhone X: 375 x 812
+// Pixel 2: 411 x 731
+// Tablet: 768 x 1024
+// Laptop: 1366 x 768
+// High-res laptop or desktop: 1920 x 1080
+
+$tablet: 640px;
+$laptop: 1024px;
+$desktop: 1400px;
+
+// (md: 640px, lg: 1024px, xl: 1400px)
+$breakpoint-up: (
+  "md": "40em",
+  "lg": "64em",
+  "xl": "87.5em",
+);
+
+// (sm: 639px, md: 1023px, lg: 1399px)
+$breakpoint-down: (
+  "sm": "39.9375em",
+  "md": "63.9375em",
+  "lg": "87.4375em",
+);
